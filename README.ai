@@ -1,40 +1,39 @@
-# 🧾 AI Finance Tools — Bank Statement Transaction Extractor
+🧾 AI Finance Tools — Bank Statement Transaction Extractor
 
-An AI-powered tool that reads a bank statement PDF, automatically extracts every transaction using **Google Gemini AI**, and exports clean, structured data into a ready-to-use CSV file.
+An AI-powered tool that reads a bank statement PDF, automatically extracts every transaction using "Google Gemini AI", and exports clean, structured data into a ready-to-use CSV file.
 
-Built by a finance/auditing professional transitioning into AI/ML — this project sits at the intersection of **finance domain knowledge** and **practical AI application**, a combination most developers don't have.
+Built by a finance/auditing professional transitioning into AI/ML — this project sits at the intersection of "finance domain knowledge" and "practical AI application", a combination most developers don't have.
 
----
 
-## 🚀 What This Project Does
+
+🚀 What This Project Does
 
 Manually reading bank statement PDFs and typing transactions into Excel is slow and error-prone. This tool automates that entire process:
 
-1. **Reads** a bank statement PDF (`sample_statement.pdf`)
-2. **Extracts** raw text from the PDF using `pdfplumber`
-3. **Sends** that text to Google's Gemini AI with a prompt asking it to identify transactions
-4. **Receives** clean, structured data back as JSON — with `date`, `description`, `amount`, and `balance` for every transaction
-5. **Exports** the final result as a `transactions.csv` file, ready to open in Excel or import into any accounting/analysis tool
+1. "Reads" a bank statement PDF (`sample_statement.pdf`)
+2. "Extracts" raw text from the PDF using `pdfplumber`
+3. "Sends" that text to Google's Gemini AI with a prompt asking it to identify transactions
+4. "Receives" clean, structured data back as JSON — with `date`, `description`, `amount`, and `balance` for every transaction
+5. "Exports" the final result as a `transactions.csv` file, ready to open in Excel or import into any accounting/analysis tool
 
-**In short:** PDF in → Clean spreadsheet out. No manual typing.
+"In short:" PDF in → Clean spreadsheet out. No manual typing.
 
----
 
-## 🛠️ Tech Stack
+ 🛠️ Tech Stack
 
 | Tool | Purpose |
 |---|---|
-| **Python 3.14** | Core programming language |
-| **Google Gemini API** | AI model that reads and understands the statement text |
-| **pdfplumber** | Extracts raw text from PDF files |
-| **pandas** | Converts structured data into a CSV file |
-| **python-dotenv** | Keeps the API key safe and out of the code |
+| "Python 3.14" | Core programming language |
+| "Google Gemini API" | AI model that reads and understands the statement text |
+| "pdfplumber" | Extracts raw text from PDF files |
+| "pandas" | Converts structured data into a CSV file |
+| "python-dotenv" | Keeps the API key safe and out of the code |
 
----
 
-## 📂 Project Structure
 
-```
+ 📂 Project Structure
+
+
 ai-finance-tools/
 ├── extract_pdf.py          # Main script: PDF → AI → CSV
 ├── test.py                 # Simple script to test Gemini API connection
@@ -45,11 +44,11 @@ ai-finance-tools/
 └── README.md                 # This file
 ```
 
----
 
-## ⚙️ How to Run This Project
 
-### 1. Clone the repo
+ ⚙️ How to Run This Project
+
+ 1. Clone the repo
 ```bash
 git clone https://github.com/chinnadabbadimeghana-max/ai-finance-tools.git
 cd ai-finance-tools
@@ -72,37 +71,37 @@ GEMINI_API_KEY=your_api_key_here
 python extract_pdf.py
 ```
 
-### 5. Check the output
+5. Check the output
 A file named `transactions.csv` will be created in the same folder — open it in Excel to see all extracted transactions.
 
----
 
-## 💡 Why This Project Matters
+
+ 💡 Why This Project Matters
 
 Finance and accounting teams spend hours manually processing bank statements, invoices, and financial documents. This project demonstrates how AI can automate that work reliably — combining:
 
-- **Domain expertise** (understanding what a real bank statement looks like, what fields matter for reconciliation/auditing)
-- **AI engineering** (prompt design, structured JSON output, API integration)
-- **Practical automation** (turning unstructured PDF data into usable business data)
+- "Domain expertise" (understanding what a real bank statement looks like, what fields matter for reconciliation/auditing)
+- "AI engneering" (prompt design, structured JSON output, API integration)
+- "Practical automation" (turning unstructured PDF data into usable business data)
 
----
 
-## 🔮 What's Next
+
+ 🔮 What's Next
 
 This is Project 1 in a series of AI + Finance tools. Coming up:
 
-- **Project 2:** A RAG (Retrieval-Augmented Generation) chatbot that can answer questions directly from financial reports/PDFs, deployed with Streamlit
+- "Project 2:" A RAG (Retrieval-Augmented Generation) chatbot that can answer questions directly from financial reports/PDFs, deployed with Streamlit
 - Expanding this extractor to handle multiple bank formats and multi-page statements
 - Adding automatic anomaly/fraud flagging on extracted transactions
 
----
 
-## 👩‍💻 About Me
+
+👩‍💻 About Me
 
 Coming from a finance and auditing background, I'm building practical AI tools that solve real problems finance professionals face every day. This project is part of my transition into AI/ML, focused on the low-competition, high-value space where finance domain knowledge meets applied AI.
 
-**Connect with me:** [Add your LinkedIn link here]
+"Connect with me:" [Add your LinkedIn link here]
 
----
+
 
 ⭐ If you found this useful, feel free to star the repo!
